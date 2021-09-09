@@ -30,9 +30,10 @@ function draw() {
   
    // teken een cirkel
   ellipse(x,y,80,80);
-//positie bal
+  //positie bal
   x=x+speedX;
   y=y-speedY;
+  
   if (y === 720){
     speedY=speedY* -1;
   }
@@ -42,6 +43,3 @@ function draw() {
   }
 }
 
-function beweegbal(){
-
-}
