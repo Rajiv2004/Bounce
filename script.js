@@ -23,7 +23,7 @@ function setup() {
  */
 function draw() {
   // stel vulkleur in
-  fill(255 255, 255);
+  fill(255,255, 255);
 
    // Kleur de achtergrond blauw, zodat je het kunt zien
    background('blue');
