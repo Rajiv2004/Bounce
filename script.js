@@ -31,15 +31,15 @@ function draw() {
    // teken een cirkel
   ellipse(x,y,80,80);
   //positie bal
-  x=x+speedX;
-  y=y-speedY;
+  x = x + speedX;
+  y = y - speedY;
   
-  if (y === 720){
-    speedY=speedY* -1;
+  if (y === 0){
+    speedY = speedY * -1;
   }
 
-  if (y === 0){
-    speedY= speedY* 1;
-  }
+  else(y === 720)
+    speedY = speedY * 1;
+  
 }
 
