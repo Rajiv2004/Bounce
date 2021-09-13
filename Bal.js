@@ -21,6 +21,8 @@ class Bal{
     }
 
     update(){
+        
+        
         if(this.x <= 0 || this.x >=1280){
             this.speedX= this.speedX * -1;
         }

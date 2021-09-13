@@ -8,8 +8,6 @@ function setup() {
   // Maak een canvas (rechthoek) waarin je je speelveld kunt tekenen
   createCanvas(1280, 720);
 
-  // Kleur de achtergrond blauw, zodat je het kunt zien
-  background('blue');
 }
 
 
@@ -19,6 +17,10 @@ function setup() {
  * uitgevoerd door de p5 library, nadat de setup functie klaar is
  */
 function draw() {
-  
+    // Kleur de achtergrond blauw, zodat je het kunt zien
+    background('blue');
+
+    bal.update();
+    bal.show();
 }
 
