@@ -19,8 +19,8 @@ function setup() {
 function draw() {
     // Kleur de achtergrond blauw, zodat je het kunt zien
     background('blue');
-
-    bal.update();
     bal.show();
+    bal.update();
+    
 }
 
