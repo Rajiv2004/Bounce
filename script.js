@@ -1,4 +1,6 @@
-bal= new Bal(50,100);
+
+
+var ballen = [];
 /**
  * setup
  * de code in deze functie wordt één keer uitgevoerd door
@@ -7,7 +9,16 @@ bal= new Bal(50,100);
 function setup() {
   // Maak een canvas (rechthoek) waarin je je speelveld kunt tekenen
   createCanvas(1280, 720);
+  for(var i = 0; i < 25; i++){
+    var randomX = random(50,1230);
+    var randomY = random(50,670);
+    var randomSpeedX = random(-5, 5);
+    var randomSpeedY =random(-5, 5);
 
+    var bal= new Bal(randomX, randomY, randomSpeedX, randomSpeedY);
+
+      ballen.push(bal);
+  }
 }
 
 
@@ -18,6 +29,12 @@ function setup() {
  */
 function draw() {
     // Kleur de achtergrond blauw, zodat je het kunt zien
+    
+    for(var i= 0; i < ballen.length; i++){
+      ballen[i].show();
+      ballen[i].update();
+    }
+    
     background('blue');
     bal.show();
     bal.update();
