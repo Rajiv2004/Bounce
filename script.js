@@ -9,7 +9,9 @@ var ballen = [];
 function setup() {
   // Maak een canvas (rechthoek) waarin je je speelveld kunt tekenen
   createCanvas(1280, 720);
+  
   for(var i = 0; i < 25; i++){
+    
     var randomX = random(50,1230);
     var randomY = random(50,670);
     var randomSpeedX = random(-5, 5);
@@ -29,15 +31,12 @@ function setup() {
  */
 function draw() {
     // Kleur de achtergrond blauw, zodat je het kunt zien
+    background('blue');
     
     for(var i= 0; i < ballen.length; i++){
       ballen[i].show();
       ballen[i].update();
     }
-    
-    background('blue');
-    bal.show();
-    bal.update();
     
 }
 
