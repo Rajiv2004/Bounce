@@ -23,6 +23,9 @@ function setup() {
   }
   var superbal= new SuperBal (600,100,10,10);
   ballen.push(superbal);
+
+  var nummerbal= new NummerBal(350, 75,3,3);
+  ballen.push(nummerbal);
 }
 
 
